@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int a, b;
+    float x;
+    printf("Введіть a, b-> ");
+    scanf("%d%d", &a, &b);
+    while((a*a-3*b)==0){
+        printf("Для заданих значень a та b у обчислюваному виразі виконується ділення на 0. Задайте інші значення->");
+        scanf("%d%d", &a, &b);
+    }
+    x=(2*cos(a)-b*b)/(3*(a*a-3*b));
+    printf("%g", x);
+
+    return 0;
+}
