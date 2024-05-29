@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float x=0;
+
+    printf("\n*************************************************\n");
+    printf("|\t\tX\t|\t\tY\t|\n");
+    printf("*************************************************\n");
+    while(x<=3+0.025){
+        if(x!=0)
+        printf("|\t%f\t|\t%f\t|\n", x, log10(x)/(4*x+13));
+        x+=0.025;
+    }
+
+
+
+    return 0;
+}
+
