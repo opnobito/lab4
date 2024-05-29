@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int n, i, j; 
+    float x, sum = 0;
+    printf("Введіть n, x -> ");
+    scanf("%d%f", &n, &x );
+    
+    for(i = 1; i <= n; i++){
+    for(j = i; j < n; j++)
+    sum += x/j;
+    }
+    
+    printf("Сума = %f", sum);
+
+    return 0;
+}
+
+
+
